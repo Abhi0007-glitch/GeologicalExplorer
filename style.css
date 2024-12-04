@@ -1,4 +1,4 @@
-/* styles.css */
+/* style.css */
 
 body {
     font-family: Arial, sans-serif;
@@ -58,8 +58,8 @@ body {
   }
   #earth-view {
     height: 500px;
-    width: 500px; /* Ensure this matches your intended dimensions */
-    background-color: black; /* Optional, for better visibility */
-    margin: auto; /* Center the view on the page */
+    width: 500px; 
+    background-color: black; 
+    margin: auto; 
   }
     
