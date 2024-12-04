@@ -1,0 +1,65 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+   
+  }
+  
+  header {
+    background: #4caf50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  section {
+    margin: 2rem;
+  }
+  
+  #map-container, #earth-view {
+    height: 300px;
+    background: #ddd;
+    border: 1px solid #ccc;
+    margin-top: 1rem;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 1rem;
+  }
+  
+  form input, button {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+
+  #map-container {
+    height: 500px;
+    margin-top: 1rem;
+  }
+  #earth-view {
+    height: 500px;
+    width: 500px; /* Ensure this matches your intended dimensions */
+    background-color: black; /* Optional, for better visibility */
+    margin: auto; /* Center the view on the page */
+  }
+    
