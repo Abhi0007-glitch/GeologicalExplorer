@@ -1,6 +1,6 @@
 // script.js
 
-// Example: Highlight geological regions on the map
+//  geological regions on the map
 document.getElementById('map-container').innerHTML = `
   <svg width="100%" height="100%" viewBox="0 0 100 50">
     <rect width="100" height="50" fill="#87ceeb" />
@@ -30,7 +30,7 @@ function identifyRock() {
 }
 document.querySelector('button').addEventListener('click', identifyRock);
 
-// Example: Display Earth layers
+//  Display Earth layers
 document.getElementById('earth-view').innerHTML = `
   <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
     <div style="background: #ff7043; width: 30px; height: 30px; border-radius: 50%;"></div>
@@ -39,17 +39,17 @@ document.getElementById('earth-view').innerHTML = `
   </div>
 `
 
-const map = L.map('map-container').setView([20, 77], 5); // Centered at India
+const map = L.map('map-container').setView([20, 77], 5); 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
 }).addTo(map);
 
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.module.js';
 
-// Ensure container dimensions
+//  container dimensions
 const earthView = document.getElementById('earth-view');
-const width = earthView.offsetWidth || 500; // Default width if not set
-const height = earthView.offsetHeight || 500; // Default height if not set
+const width = earthView.offsetWidth || 500; 
+const height = earthView.offsetHeight || 500; 
 
 // Initialize Three.js components
 const scene = new THREE.Scene();
@@ -58,7 +58,7 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize(width, height);
 earthView.appendChild(renderer.domElement);
 
-// Add a rotating sphere (Earth)
+// rotating sphere (Earth
 const geometry = new THREE.SphereGeometry(5, 32, 32);
 const material = new THREE.MeshStandardMaterial({
   color: 0x0077be,
@@ -78,7 +78,7 @@ camera.position.z = 15;
 // Rotation animation
 function animate() {
   requestAnimationFrame(animate);
-  sphere.rotation.y += 0.01; // Rotate around Y-axis
+  sphere.rotation.y += 0.01; 
   renderer.render(scene, camera);
 }
 
